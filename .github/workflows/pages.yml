@@ -1,10 +1,8 @@
-# File: .github/workflows/pages.yml
-
-name: Deploy GitHub Pages
+name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main]  # Make sure your main branch is named 'main'
+    branches: [main]
 
 permissions:
   contents: read
@@ -15,16 +13,16 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout source code
-        uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-      - name: Setup GitHub Pages
-        uses: actions/configure-pages@v3
+      - name: Set up GitHub Pages
+        uses: actions/configure-pages@v4
 
-      - name: Upload HTML files
-        uses: actions/upload-pages-artifact@v2
+      - name: Upload website
+        uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'  # use './' if your index.html is in root
+          path: '.'  # change if your index.html is in a subfolder
 
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4
