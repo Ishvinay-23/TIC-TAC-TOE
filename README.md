@@ -35,20 +35,20 @@ A fun and interactive **Tic Tac Toe game** built with HTML, CSS, and JavaScript,
 
  📂 File Structure
   tic-tac-toe/
-├── index.html          # Main HTML structure
-├── style.css           # Game styles, colors, hover, animation
-├── script.js           # Game logic, AI, and interactivity
+├── index.html         
+├── style.css           
+├── script.js           
 ├── assets/
 │   ├── sounds/
-│   │   ├── click.mp3       # Tap sound
-│   │   ├── win.mp3         # Win sound
-│   │   └── draw.mp3        # Draw sound
-│   └── images/             # (Optional) icons or player avatars
-├── README.md           # GitHub documentation
-├── LICENSE             # (Optional) Open-source license (MIT)
-└── .gitignore          # Git ignored files
+│   │   ├── click.mp3       
+│   │   ├── win.mp3         
+│   │   └── draw.mp3        
+│   └── images/             
+├── README.md           
+├── LICENSE             
+└── .gitignore          
 
-license
+license :
 This project is open-source under the MIT License.
 
 
