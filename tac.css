@@ -1,0 +1,64 @@
+body {
+  background: #1e1e2f;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.game-container {
+  text-align: center;
+  background: #292947;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+.settings {
+  margin-bottom: 10px;
+}
+input, select, button {
+  margin: 5px;
+  padding: 6px;
+  border-radius: 5px;
+}
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  margin: 20px auto;
+  gap: 5px;
+}
+.cell {
+  border: 1px solid #333;
+  min-width: 100px;
+  min-height: 100px;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  background-color: #fff;
+  color: #000;
+}
+.cell:hover {
+  background-color: #f1f1f1;
+}
+.cell.win {
+  background-color: #4caf50;
+  color: white;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+@keyframes glow {
+  from {
+    box-shadow: 0 0 5px #4caf50;
+  }
+  to {
+    box-shadow: 0 0 20px #4caf50;
+  }
+}
+#scoreboard {
+  font-size: 1.2rem;
+}
