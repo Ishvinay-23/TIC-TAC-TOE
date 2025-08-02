@@ -25,5 +25,5 @@ jobs:
           path: '.'  # or 'dist' or 'docs' if your index.html is inside a folder
 
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v4
- actions/deploy-pages@v4
+        
+      uses: actions/deploy-pages@v4
