@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+uses:name: Deploy to GitHub Pages
 
 on:
   push:
@@ -22,7 +22,8 @@ jobs:
       - name: Upload website
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'  # change if your index.html is in a subfolder
+          path: '.'  # or 'dist' or 'docs' if your index.html is inside a folder
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
+ actions/deploy-pages@v4
